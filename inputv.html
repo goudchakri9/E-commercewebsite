@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function updateDiv() {
+        var input = document.getElementById("inputField").value;
+        var result = "";
+        for (var i = 0; i < input.length; i++) {
+          if ((i + 1) % 3 !== 0) {
+            result += input[i];
+          }
+        }
+        document.getElementById("outputDiv").textContent = result;
+      }
+	  console.log(result);
+    </script>
+  </head>
+  <body>
+    <input type="text" id="inputField" oninput="updateDiv()" />
+    <div id="outputDiv"></div>
+  </body>
+</html>
